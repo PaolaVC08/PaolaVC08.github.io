@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SkillsService {
-  accesoSkills = "skills service running";
+  accesoSkills = "skills service running...";
+
   constructor() { }
 }

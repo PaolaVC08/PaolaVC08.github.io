@@ -1,4 +1,6 @@
-<p>languages works!</p>
-<p>
-        {{languagesService.accesoLanguages}}
-</p>
+<ul*ngFor="let language of languages;">
+	<li>
+	  <b> {{ language.language }}</b> <br>
+	</li>
+</ul>
+

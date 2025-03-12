@@ -19,7 +19,7 @@ export class CertificatesComponent {
 		     )
 		)
 	      ).subscribe(data => {
-	       this.certificates = data [0];
+	       this.certificates = data;
 	       console.log(this.certificates);
 	      });
         }

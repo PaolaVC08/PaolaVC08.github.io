@@ -10,5 +10,10 @@ jobs:
     steps:
       - run: ls -la
       - uses: actions/checkout@v2
-      - run: echo ‘hello ann’
       - run: ls -la
+      - run: echo ‘hello ann’
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 20.x
+

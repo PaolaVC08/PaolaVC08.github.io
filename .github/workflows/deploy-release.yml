@@ -22,7 +22,14 @@ jobs:
 
       - name: build setup
         run: npm run build
+        
       - name: list dir
         run: ls -la dist/mycv/browser
+
+      - name: copy index.html, cs, js 
+        run: cp dist/mycv/browser/. docs
+        
+      - name: list docs
+        run: ls -la docs
 
 

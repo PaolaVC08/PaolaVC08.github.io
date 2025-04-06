@@ -1,6 +1,11 @@
-<ul *ngFor="let skill of skills;">
-  <li>
-    <b>{{ skill.skill }}</b> - {{ skill.proficiency }}%
-  </li>
-</ul>
+<div class="section-block">
+  <h2 class="section-title">SKILLS</h2>
+
+<div *ngFor="let s of skills" class="skill">
+  <div class="skill-name">{{ s.skill }}</div>
+  <div class="skill-bar">
+    <div class="skill-fill" [ngStyle]="{ 'width': s.proficiency + '%' }"></div>
+  </div>
+  <div class="skill-percentage">{{ s.proficiency }}%</div>
+</div>
 

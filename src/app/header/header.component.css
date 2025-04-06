@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 15px;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.left h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #b38bd4;
+  font-style: italic;
+  margin-top: 4px;
+  font-size: 1rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #b38bd4;
+  object-fit: cover;
+}
+
+.right {
+  font-size: 0.9rem;
+}
+
+.contact p,
+.right p {
+  margin: 2px 0;
+}
+
+.icon {
+  color: #b38bd4;
+  margin-right: 6px;
+}
+
+.right {
+  font-size: 0.9rem;
+  text-align: right;
+  padding-right: 20px; /* margen para que no quede pegado al borde */
+}
+
+.right p {
+  margin: 4px 0;
+}
+
+.icon-right {
+  color: #b38bd4;
+  margin-left: 8px;
+}
+.left {
+  padding-left: 20px; /* margen para que no esté pegado al borde izquierdo */
+}
+
+.header-name {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header-goal {
+  color: #a96fd8; /* un morado clarito */
+  font-size: 0.95rem;
+  margin-top: 5px;
+  font-style: normal; /* sin itálica */
+}
+.header-section.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Esto alinea a la izquierda */
+  padding-left: 20px; /* Ya lo tenías, lo dejamos */
+  text-align: left; /* Por si acaso */
+}
+

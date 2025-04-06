@@ -1,15 +1,18 @@
-<tr>
-  <td>
-    {{header.name}}<br>
-    {{header.goalLife}}
-  </td>
-  <td>
-	  <img src="{{header.photoURL}}" width='200' height= '200'>
-  </td>
-  <td>
-    {{header.email}}<br>
-    {{header.phoneNumber}}<br>
-    {{header.location}}<br>
-    {{header.socialNetwork}}
-  </td>
-</tr>
+<div class="header">
+  <div class="header-section left">
+    <h1 class= "header-name">{{ header.name }}</h1>
+    <p class="header-goal">{{ header.goalLife }}</p>
+  </div>
+
+  <div class="header-section center">
+    <img [src]="header.photoURL" alt="Profile Photo" class="profile-img">
+  </div>
+	<div class="header-section right">
+  <p>{{ header.email }} <i class="fas fa-envelope icon-right"></i></p>
+  <p>{{ header.phoneNumber }} <i class="fas fa-phone icon-right"></i></p>
+  <p>{{ header.location }} <i class="fas fa-map-marker-alt icon-right"></i></p>
+  <p>{{ header.socialNetwork }} <i class="fab fa-instagram icon-right"></i></p>
+</div>
+
+</div>
+

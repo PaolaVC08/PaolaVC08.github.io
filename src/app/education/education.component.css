@@ -1,0 +1,40 @@
+.section-block {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.edu-block {
+  margin-bottom: 30px;
+}
+
+.edu-degree {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.edu-school {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.purple {
+  color: #660099;
+}
+
+.edu-details {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+

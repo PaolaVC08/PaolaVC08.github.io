@@ -1,0 +1,24 @@
+.section-block {
+  margin-bottom: 5px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* espacio entre idiomas */
+  font-size: 14px;
+  color: #444;
+}
+
+.language-item {
+  font-weight: 500;
+}
+

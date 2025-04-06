@@ -1,0 +1,43 @@
+.section-block {
+  margin-bottom: 5px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.skill {
+  margin: 10px 0;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  background: #ddd;
+  height: 12px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-fill {
+  background: #660099;
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.skill-percentage {
+  font-size: 12px;
+  margin-top: 2px;
+  text-align: right;
+  color: #555;
+}
+

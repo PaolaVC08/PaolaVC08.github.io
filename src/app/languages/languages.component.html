@@ -1,6 +1,10 @@
-<ul *ngFor="let language of languages;">
-	<li>
-	  <b> {{ language.language }}</b> <br>
-	</li>
-</ul>
+<div class="section-block">
+  <h2 class="section-title">LANGUAGES</h2>
+
+  <div class="languages-list">
+    <span class="language-item" *ngFor="let language of languages">
+      {{ language.language }}
+    </span>
+  </div>
+</div>
 

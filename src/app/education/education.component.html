@@ -1,8 +1,18 @@
-<ul *ngFor="let edu of education;">
-  <li>
-    {{edu.startDate}} - {{edu.endDate}} <br>
-    <b>{{edu.name}}</b> <br>
-    {{edu.school}} <br>
-  </li>
-</ul>
+<div class="section-block">
+  <h2 class="section-title">EDUCATION</h2>
+
+  <div *ngFor="let edu of education" class="edu-block">
+    <div class="edu-degree">{{ edu.name }}</div>
+
+    <div class="edu-details">
+      <i class="fas fa-calendar-alt icon"></i>
+      <span>{{ edu.startDate }} - {{ edu.endDate }}</span>
+    </div>
+
+    <div class="edu-school">
+      <span class="purple">{{ edu.school }}</span>
+    </div>
+
+  </div>
+</div>
 

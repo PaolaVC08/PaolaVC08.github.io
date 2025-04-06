@@ -1,0 +1,33 @@
+.section-block {
+  margin-bottom: 5px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.certificate-block {
+  margin-bottom: 20px;
+}
+
+.certificate-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.certificate-year {
+  color: #666;
+  font-weight: normal;
+}
+
+.certificate-description {
+  font-size: 14px;
+  color: #444;
+}
+

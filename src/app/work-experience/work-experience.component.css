@@ -1,0 +1,63 @@
+.section-block {
+  margin-bottom: 5px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.job-block {
+  margin-bottom: 30px;
+}
+
+.job-position {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.job-company {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.purple-icon,
+.purple {
+  color: #660099;
+}
+
+.job-details {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.job-details i {
+  margin-right: 1px;
+}
+
+.icon {
+  font-size: 13px;
+}
+
+.job-accomplishments {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.job-accomplishment {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 5px;
+}
+

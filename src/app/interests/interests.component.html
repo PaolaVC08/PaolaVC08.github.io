@@ -1,5 +1,10 @@
-<ul *ngFor="let interest of interests;">
-	<li>
-	  <b> {{ interest.description }}</b> <br>
-	</li>
-</ul>
+<div class="section-block">
+  <h2 class="section-title">INTERESTS</h2>
+
+  <div class="interests-list">
+    <span class="interest-item" *ngFor="let interest of interests">
+      {{ interest.description }}
+    </span>
+  </div>
+</div>
+

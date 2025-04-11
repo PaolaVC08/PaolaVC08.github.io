@@ -7,6 +7,7 @@ body {
 }
 
 .container {
+
     width: 800px; /* Ajustado para tamaño carta */
     margin: auto;
     background: white;

@@ -1,9 +1,9 @@
 name: CI/CD deploy release
 on: 
   push:
-   branches: [ "deploy-release"]
+    branches: [ "deploy-release"]
   #pull_request:
-    #branches: [ "deploy-release"]
+   # branches: [ "deploy-release"]
 jobs:
   ci_cd_deploy_release:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
       - run: ls -la
       - uses: actions/checkout@v2
       - run: ls -la
-      - run: echo ‘hello ann’
+      - run: echo 'hello world'
       - name: Use Node.js 20.x
         uses: actions/setup-node@v1
         with:
@@ -27,24 +27,27 @@ jobs:
 
       - name: build setup
         run: npm run build
-        
+
       - name: list dir
         run: ls -la dist/mycv/browser
 
-      - name: copy index.html, cs, js 
-        run: cp dist/mycv/browser/*.* docs
-        
+      - name: copy all built files (including subdirectories)
+        run: |
+          mkdir -p docs
+          cp -r dist/mycv/browser/* docs/
+#      - name: copy index.html, css, js
+ #       run: cp dist/mycv/browser/. docs
+
       - name: list docs
         run: ls -la docs
 
       - name: GIT commit and push docs
         env: 
-          CI_COMMIT_MESSAGE: save spark results
-          CI_COMMIT_AUTHOR: paola 
-        run: |
-          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-          git config --global user.email "zS23004729@estudiantes.uv.mx"
-          git add .
-          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push origin deploy-release
-
+         CI_COMMIT_MESSAGE: save spark results
+         CI_COMMIT_AUTHOR: manu
+        run: | 
+         git config --global user.name "Ann"
+         git config --global user.email "ann@gmail.com"
+         git add .
+         git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+         git push
